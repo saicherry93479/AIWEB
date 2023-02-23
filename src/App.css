@@ -1,0 +1,13 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url('./Assets/Images/fonts.ttf');
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+   color: #160647;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: myFirstFont;
+  overflow: none;
+}

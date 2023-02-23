@@ -1,0 +1,40 @@
+.sectionTwoCard{
+    background-color: #f1faf8;
+    padding: 30px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 320px;
+    height: fit-content;
+    flex-shrink: 0;
+
+}
+.sectionTwoCard>div:nth-child(1){
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+.sectionTwoCard>div:nth-child(1)>img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.sectionTwoParaOne{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    
+}
+.sectionTwoParaTwo{
+    color:  #99A8A8;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.sectionTwoCard>p{
+    color: #160647;
+    font-size: 14px;
+    line-height: 22px;
+}
+

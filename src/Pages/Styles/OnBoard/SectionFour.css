@@ -1,0 +1,132 @@
+.sectionFour{
+    padding: 140px;
+}
+.sectionFour>h1{
+    font-size: 56px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.sectionFourDiv{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-top: 80px;
+     
+   
+}
+.sectionFourDiv>div{
+    background: #F8FCFB;
+    border: 1px solid #DEF7F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+.sectionFourDiv>p{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.6px;
+    
+}
+.sectionFourPara{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    /* margin-top: 200px; */
+    width: 60%;
+    text-align: center;
+    /* background-color: red; */
+    margin: auto;
+}
+.readyPara{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    /* or 152% */
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    line-height: 26px;
+    margin-top: 10px;
+    
+
+ 
+
+    color: #817A99;
+}
+.sectionFourLast{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.sectionFourCustom{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.sectionFourCustomCir{
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F8FCFB;
+    border: 2px solid #DEF7F0;
+    border-radius: 100px;
+}
+.sectionFourCustom>p{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+
+@media  screen and (max-width:500px) {
+    .sectionFour{
+        padding: 80px 20px;
+    }
+    .sectionFour>h1{
+        font-size: 28px;
+        line-height: 36px;
+        
+    }
+    .sectionFourDiv{
+        width: 100%;
+    }
+    .sectionFourDiv>p{
+        font-size: 18px;
+    }
+    .sectionFourPara{
+        width: 90%;
+        padding-left: 30px;
+        text-align: left;
+        font-size: 16px;
+    }
+    .readyH{
+        font-size: 22px;
+        line-height: 36px;
+        text-align: center;
+        
+    }
+    .readyPara{
+        width: 90%;
+    }
+    .sectionFourLast{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 20px;
+    }
+    .customMobilePaddingSectionFour{
+        padding: 0px 40px;
+    }
+}

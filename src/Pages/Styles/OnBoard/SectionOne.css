@@ -1,0 +1,98 @@
+
+.sectionOne{
+    background-image: url('https://assets-global.website-files.com/628288c5cd3e8411b90a36a4/629d16c1151de225ed621782_Background-07%20(1).webp');
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:100px 80px;
+    margin: 0px 40px;
+    
+}
+/* .sectionOne>div{
+    width: 85%;
+    margin: auto;
+} */
+.sectionOne>div>h1{
+    max-width: 24ch;
+    color: #160647;
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sectionOne>div>.sectionOneButtons>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0px;
+    
+   
+}
+.sectionOne>div>.sectionOneButtons>.heroPara{
+    color: #76838F;
+    font-size: 15px;
+    line-height: 1.5;
+
+
+}
+.sectionOne>div>.sectionOneButtons>div>p{
+    color: #76838F;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+
+}
+.customTextOne{
+    font-weight: 700;
+}
+.sectionOne>div>.sectionOneButtons>div{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.border{
+    border: 0.5px solid  rgba(66, 133, 156, 0.12);
+    margin: 40px 0px;
+    
+}
+.customText{
+    background: -webkit-linear-gradient(0deg, #47BEB9 0%, #DDCD86 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+@media screen and (max-width : 500px) {
+    .sectionOne{
+        background-image: none;
+        background-color: #c8e3f6;
+        padding: 50px 15px;
+        margin: 0px 10px;
+        border-radius: 30px;
+        display: block;
+
+    }
+    .sectionOne>div>h1{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -1.08px;
+        margin-bottom: 40px;
+    }
+    .sectionOne>div>.sectionOneButtons>div>p{
+        display: none;
+    }
+    .sectionOne>div>.sectionOneButtons>div{
+        flex-direction: column;
+    }
+    .sectionOne>div>.sectionOneButtons>div>div{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    
+}

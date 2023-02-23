@@ -1,0 +1,150 @@
+.sectionThree{
+    /* height: 100vh; */
+    margin: 0px 40px;
+    border-radius: 30px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9feff;
+
+    /* width: 100vw; */
+    background-position-x:50% ;
+    background-position-y:0 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://assets-global.website-files.com/628288c5cd3e8411b90a36a4/629d16c07d66dda95458cbad_Background-03%20(1).webp");
+}
+
+.sectionThree>p:nth-child(1){
+    font-size: 72px;
+    width: 60%;
+    /* background-color: red; */
+    text-align: center;
+    font-weight: 600;
+}
+
+.sectionThreeCustomText{
+    /* font-size:200%; */
+    /* background-size: 72px; */
+    font-size: 72px;
+    background: linear-gradient(0deg, #47BEB9 0%, #DDCD86 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* overflow: hidden; */
+    
+    /* width: 0; */
+     /* The typwriter cursor */
+     letter-spacing: .05em;
+    white-space: nowrap; 
+    margin: 0 auto;
+    /* animation: 
+    typing 4.5s infinite; */
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(30);
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+
+    
+    
+  
+
+}
+@keyframes typing {
+    0% { width: 0 }
+    50% { width: 100% }
+    100% {width: 0%;}
+  }
+  
+  /* The typewriter cursor effect */
+
+
+
+
+
+.sectionThree>p:nth-child(2){
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-size-adjust: 100%;
+    line-height: 25.92px;
+    margin: 30px 0px;
+}
+.sectionThreeCards{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+   
+}
+.sectionThreeItems{
+    display: flex;
+}
+.sectionThreeItem>p:nth-child(1){
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.39px;
+    margin-bottom: 10px;
+
+}
+.sectionThreeItem>p:nth-child(2){
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+/* .border{
+    border: 0.5px solid  rgba(66, 133, 156, 0.12);
+    margin: 40px 0px;
+} */
+.breaker{
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .sectionThree{
+        padding: 40px 20px;
+        margin: 0 20px;
+        background-image: none;
+        background-color: #f8fcfb;
+        border-radius: 20px;
+    }
+    .sectionThree>p:nth-child(1), .sectionThreeCustomText{
+        width: 100%;
+        font-size: 36px;
+        letter-spacing: -1.08px;
+        margin-bottom: 9px;
+        line-height: 44px;
+    }
+    .sectionThree>p:nth-child(2){
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 9px;
+        font-weight: 400;
+    }
+    .breaker{
+        display: block;
+    }
+    .sectionThreeCards{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sectionThreeItems{
+        flex-direction: column;
+        gap: 30px;
+        width: 90%;
+    }
+    .sectionThreeItem>p:nth-child(1){
+        margin-bottom: 20px;
+    }
+   
+}

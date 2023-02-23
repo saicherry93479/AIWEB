@@ -1,0 +1,72 @@
+.navBarMenuItem{
+    position: relative;
+}
+.topMenu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    
+}
+.navBarMenuItem:hover>.subMenu{
+    display: block;
+}
+.subMenu{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    /* background-color: red; */
+    height: fit-content;
+    width: max-content;
+    top: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    border: 0.5px solid rgba(255,255,255,0.5);
+    box-shadow: 0 12px 24px -12px rgb(66 133 156 / 30%), inset 0 0 0 1px rgb(66 133 156 / 12%);
+}
+.subMenu>div{
+    width: 100%;
+    padding:20px  ;
+    padding-right: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.subMenu>div:hover{
+    background-color: #caf7f4;
+    transition: all 500ms ease;
+
+
+}
+.subMenu>div:hover>p{
+    color:#47beb9 ;
+}
+
+ 
+
+
+@media screen and (max-width:500px) {
+    .navBarMenuItem{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+    }
+    .navBarMenuItem:hover{
+        background-color: #caf7f4;
+
+    }
+    .navBarMenuItem>.topMenu{
+        justify-content: space-between;
+
+    }
+    .subMenu{
+        width: 90%;
+        position: relative;
+    }
+    
+}  

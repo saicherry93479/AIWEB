@@ -1,0 +1,145 @@
+.navBar{
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding:0px  40px ;
+    gap: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    
+
+}
+.navMenu{
+    display: flex;
+    /* background-color: red; */
+    flex-grow: 1;
+    align-items: center;
+    gap: 20px;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    
+    /* width: 500px; */
+    /* background-color: red; */
+    flex-grow: 1;
+}
+.menu>div{
+    padding: 10px;
+}
+.menu>div:nth-child(5){
+    justify-self: flex-end;
+    margin-left: auto;
+
+}
+
+.menuIcon{
+    display: none;
+    transition: all 200ms ease;
+    border-radius: 10px;
+}
+.navSignupMobileButton{
+    display: none;
+}
+@media screen and (max-width :500px) {
+    .navMenu{
+        /* display: none; */
+        padding: 10px;
+        border-radius: 15px;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 2.5%;
+        width: 95%;
+        z-index: 100;
+        transform: translateY(-200%);
+        /* background-color: red; */
+        /* background-color: aqua; */
+        background-image: linear-gradient(180deg,#f9feff,#f9feff);
+        box-shadow: 0 12px 24px -12px rgb(66 133 156 / 30%), inset 0 0 0 1px rgb(66 133 156 / 12%);
+
+        /* animation-name: mobileMenu; */
+        animation-duration: 400ms;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        /* animation-direction: alternate; */
+        animation-fill-mode: forwards;
+        
+        
+        
+
+
+    }
+
+    @keyframes mobileMenu {
+        
+        0% {
+            transform: translateY(-200%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes mobileMenuClose{
+        0% {
+            transform: translateY(0%);
+        }
+        100% {
+            transform: translateY(-200%);
+        }
+
+    }
+    .menu{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .menu>div{
+        /* background-color: red; */
+        padding: 15px 24px;
+
+        
+    }
+    .menu>div>p{
+        font-size: 16px ;
+        font-weight: 400;
+        line-height: 23px;
+
+    }
+    .menu>div:nth-child(5){
+        justify-self: normal;
+        margin-left: 0;
+    }
+    .menu{
+        flex-grow: 0;
+        flex-direction: column;
+        
+    }
+    .menuIcon{
+        display: block;
+    }
+    .navBar{
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+    .navSignupDesktopButton{
+        display: none;
+    }
+    .navSignupMobileButton{
+        display: block;
+        width: 100%;
+        /* padding: 10px 15px; */
+        background-color:#47beb9 ;
+        border-radius: 10px;
+        padding: 15px 24px;
+        
+    }
+    .navSignupMobileButton>p{
+        color: white;
+    }
+
+}

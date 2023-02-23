@@ -1,0 +1,22 @@
+.navBarButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    gap:10px
+}
+.navBarButton>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.navBarButton>p{
+    color: white;
+
+
+}
