@@ -100,7 +100,7 @@ flex-basis: 45%;
     color: white;
 }
 .predictionHomeCustomInputs{
-    margin: 40px 0px;
+    margin: 20px 0px;
 }
 .predictCustomInput>p:nth-child(1){
     font-size: 13px;
@@ -114,9 +114,9 @@ flex-basis: 45%;
     font-size: 12px;
     /* font-weight: 600; */
     line-height: 18px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     color: rgb(235,87,87);
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     
 
 }
@@ -124,7 +124,7 @@ flex-basis: 45%;
     outline: none;
     border: 1px solid #E9EEF2;
     border-radius: 6px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     padding: 16px 24px;
     width: 100%;
     font-size: 16px;

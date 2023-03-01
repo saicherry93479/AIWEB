@@ -11,7 +11,7 @@ const menuItems=[
     {text:"Use Cases",subMenu:['For Social media','For Blog']},
     {text:"Resources",subMenu:['For Social media','For Blog','For Social media','For Blog']},
     {text:"Pricing",subMenu:[],redirect:'/prices'},
-    {text:'Login',subMenu:[]}
+    {text:'Login',subMenu:[],redirect:'/signin'}
 ]
 const NavBar = () => {
   const [showMenu,setShowmenu]=useState(false)
@@ -28,7 +28,7 @@ const NavBar = () => {
             {menuItems.map((data,index)=><NavBarmenuItem redirect={data.redirect} key={index} index={index} text={data.text} subMenu={data.subMenu}></NavBarmenuItem>)}
           </div>
           <div className='navSignupDesktopButton'>
-          <NavBarButton text={"Get Started -- It's Free"} bColor={"#47BEB9"}  ></NavBarButton>
+          <NavBarButton text={"Get Started -- It's Free"} redirect={'/signup'} bColor={"#47BEB9"}  ></NavBarButton>
           </div>
           <div className='navSignupMobileButton'>
             <p>Sign Up</p>

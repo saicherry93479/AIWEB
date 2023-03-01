@@ -1,0 +1,12 @@
+.signLeft{
+    width: 300px;
+    height: 400px;
+}
+@media screen and (max-width:500px) {
+    .signLeft{
+        width: 200px;
+        height: 200px;
+        
+    }
+    
+}

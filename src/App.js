@@ -7,6 +7,8 @@ import Footer from './Pages/Components/OnBoard/Footer'
 import Home from './Pages/Components/OnBoard/Home/Home.js'
 import Price from './Pages/Components/OnBoard/Price/Price'
 import PredictionHome from './Pages/Components/Prediction/PredictionHome'
+import Signin from './Pages/Components/Auth/Signin'
+import SignUp from './Pages/Components/Auth/SignUp'
 
 
 const App = () => {
@@ -20,7 +22,8 @@ const App = () => {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/prices' element={<Price></Price>}></Route>
         <Route path='/predict' element={<PredictionHome></PredictionHome>}></Route>
-
+        <Route path='/signin' element={<Signin></Signin>}></Route>
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>
