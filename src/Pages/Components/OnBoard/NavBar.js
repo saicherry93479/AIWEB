@@ -30,7 +30,7 @@ const NavBar = () => {
           <div className='navSignupDesktopButton'>
           <NavBarButton text={"Get Started -- It's Free"} redirect={'/signup'} bColor={"#47BEB9"}  ></NavBarButton>
           </div>
-          <div className='navSignupMobileButton'>
+          <div className='navSignupMobileButton' onClick={()=>navigate('/signup')}>
             <p>Sign Up</p>
 
           </div>
