@@ -4,7 +4,7 @@ import DropDownIcon from '../../../Assets/Images/DropDownIcon'
 import MenuIcon from '../../../Assets/Images/MenuIcon'
 import '../../Styles/OnBoard/NavBarMenuItem.css'
 
-const NavBarmenuItem = ({text,subMenu,index,redirect}) => {
+const NavBarmenuItem = ({text,subMenu,index,redirect=''}) => {
 
   const [showMenu,setShowMenu]=useState(false)
   const navigate=useNavigate();
@@ -15,7 +15,7 @@ const NavBarmenuItem = ({text,subMenu,index,redirect}) => {
   
      >
        <div className='topMenu'
-       onClick={()=>navigate(redirect)}
+       onClick={redirect.length>0?()=>navigate(redirect):()=>{}}
 
     
        
