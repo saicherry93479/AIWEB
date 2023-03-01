@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import SignupImage from '../../../Assets/Images/SignupImage'
 import PredictCustomInput from '../Prediction/PredictCustomInput'
 
@@ -9,6 +10,8 @@ const SignUp = () => {
     const [passwordError,setPasswordError]=useState('')
     const [name,setName]=useState('')
     const [nameError,setNameError]=useState('')
+
+    const navigate=useNavigate();
 
   return (
     <div className='predictionHome signin'>
@@ -25,6 +28,8 @@ const SignUp = () => {
             <div className='predictButton' style={{backgroundColor:'#47BEB9'}}>
                 <p>Sign Up</p>
             </div>
+            <p style={{marginTop:"12px"}}>Already have account yet? <span className='siginSuggest' onClick={()=>navigate('/signin')}> Sign In </span>
+            </p>
 
         </div>
     </div>

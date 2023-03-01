@@ -2,6 +2,13 @@
     width: 300px;
     height: 400px;
 }
+.siginSuggest{
+    color: #47beb9;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
 @media screen and (max-width:500px) {
     .signLeft{
         width: 200px;

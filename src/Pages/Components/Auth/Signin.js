@@ -8,6 +8,8 @@ const Signin = () => {
     const [password,setPassword]=useState('')
     const [passwordError,setPasswordError]=useState('')
 
+    const navigate=useNavigate();
+
   return (
     <div className='predictionHome signin'>
         <div className='signLeft'>
@@ -22,6 +24,7 @@ const Signin = () => {
             <div className='predictButton' style={{backgroundColor:'#47BEB9'}}>
                 <p>Sign In</p>
             </div>
+            <p style={{marginTop:"12px"}}>Don't have account yet? <span className='siginSuggest' onClick={()=>navigate('/signup')}> Sign Up </span></p>
 
         </div>
     </div>
