@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import SignupImage from '../../../Assets/Images/SignupImage'
 import  '../../Styles/Auth/SignIn.css'
 import PredictCustomInput from '../Prediction/PredictCustomInput'
