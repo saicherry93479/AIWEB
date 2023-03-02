@@ -102,7 +102,7 @@ flex-basis: 45%;
 .predictionHomeCustomInputs{
     margin: 20px 0px;
 }
-.predictCustomInput>p:nth-child(1){
+.predictionCustomInputLabel{
     font-size: 13px;
     font-weight: 600;
     line-height: 21px;
@@ -185,7 +185,7 @@ flex-basis: 45%;
     .predictionHomeRight>h1>.br{
         display: none;
     }
-    .predictCustomInput>p:nth-child(1){
+    .predictionCustomInputLabel{
         font-size: 12px;
         line-height: 18px;
         margin-bottom: 4PX;

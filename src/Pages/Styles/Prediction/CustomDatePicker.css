@@ -1,0 +1,40 @@
+.rmdp-container {
+    width: 100%;
+}
+.rmdp-container>div:nth-child(1){
+    width: 100%;
+}
+.customDatePicker{
+    width: 100%;
+    /* background-color: red; */
+}
+.customDatePicker>div{
+    outline: none;
+    border: 1px solid #E9EEF2;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-right: 24px;
+    /* background-color: blueviolet; */
+    
+
+    
+    /* width: 400px; */
+
+}
+.customDatePicker>div>input{
+    padding: 16px 24px;
+    padding-right: 0px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    line-height: 19px;
+    outline: none;
+    border-radius: 6px;
+
+
+    border: none;
+
+}

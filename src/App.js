@@ -9,6 +9,7 @@ import Price from './Pages/Components/OnBoard/Price/Price'
 import PredictionHome from './Pages/Components/Prediction/PredictionHome'
 import Signin from './Pages/Components/Auth/Signin'
 import SignUp from './Pages/Components/Auth/SignUp'
+import Sample from './Pages/Components/Sample'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/predict' element={<PredictionHome></PredictionHome>}></Route>
         <Route path='/signin' element={<Signin></Signin>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/sample' element={<Sample></Sample>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>
