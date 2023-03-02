@@ -7,7 +7,7 @@ import NavBarButton from './NavBarButton'
 import NavBarmenuItem from './NavBarmenuItem'
 
 const menuItems=[
-    {text:"Teams",subMenu:[],redirect:'/predict'},
+    {text:"Predict",subMenu:[],redirect:'/predict'},
     {text:"Use Cases",subMenu:['For Social media','For Blog']},
     {text:"Resources",subMenu:['For Social media','For Blog','For Social media','For Blog']},
     {text:"Pricing",subMenu:[],redirect:'/prices'},
