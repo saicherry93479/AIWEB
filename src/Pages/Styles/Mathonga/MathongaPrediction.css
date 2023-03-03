@@ -1,6 +1,6 @@
 .mathongaPrediction{
     background-color: var(--mathonga-primary-color);
-    padding: 0px 12px;
+    padding: 0px 40px;
     min-height: 100vh;
     padding-bottom: 40px;
 }
@@ -198,6 +198,10 @@
 
 
 @media screen and  (max-width:500px){
+    .mathongaPrediction{
+        padding: 0px 20px;
+        padding-bottom: 40px;
+    }
     .mathongaPredictionInputs{
         flex-direction: column;
     }

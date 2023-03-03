@@ -1,0 +1,116 @@
+.cutOffs{
+    margin: 0px 40px;
+}
+.cutOffsDiv{
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+    margin: 1rem 0;
+    padding: 14px;
+    border-radius: 0.28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+    
+
+}
+
+.cutOffsButton{
+    padding: 11px 30px;
+    margin-right: 5px;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: .28571429rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.cutOffsButton>p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    color: white;
+}
+
+.pCustomCutOff{
+    margin: 1em 0;
+    color: grey;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.cutOffSelect .css-1nmdiq5-menu{
+    background-color: white !important;
+}
+.cutOffsFlex{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.cutOffsPara{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color:rgba(0,0,0,0.95);
+    margin-bottom: 20px;
+   
+}
+.cutOffsInstructions{
+    padding: 20px 30px;
+    box-shadow: inset 0 0 0 1px #a9d5de, 0 0 0 0 transparent;
+    background-color: #f8ffff;
+    border-radius: 4px;
+   
+    
+
+}
+.cutOffsInstructions li{
+    color: #558494;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4.5px;
+    margin-left: 14px;
+
+}
+.divide{
+
+    border: 1px solid rgba(34,36,38,.15);
+    margin: 20px 0px;
+    width: 100%;
+}
+.cutOffFilters{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.cutOffInput{
+    padding: 11px 30px;
+    margin: 0;
+    /* max-width: 100%; */
+    /* flex: 1 0 auto; */
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    text-align: left;
+    line-height: 1.21428571em;
+
+    padding: 0.67857143em 1em;
+    background: #fff;
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.87);
+    border-radius: 0.28571429rem;
+
+    width: 200px;
+
+}
+
+@media screen and (max-width:500px) {
+    .cutOffs{
+        margin: 0px 20px;
+
+    }
+    .cutOffsButton{
+        padding: 6px 15px;
+    }
+    .cutOffsButton>p{
+        line-height: normal;
+    }
+}

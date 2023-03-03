@@ -13,6 +13,7 @@ import Sample from './Pages/Components/Sample'
 import Loader from './Pages/Components/Utils/Loader'
 import AnimationOne from './Pages/Components/Utils/AnimationOne'
 import MathongaPrediction from './Pages/Components/Mathonga/MathongaPrediction'
+import CutOffs from './Pages/Components/Cutoffs/CutOffs'
 
 export const  AppContext = createContext()
 
@@ -37,6 +38,7 @@ const App = () => {
         <Route path='/signin' element={<Signin></Signin>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/mathongaPrediction' element={<MathongaPrediction></MathongaPrediction>}></Route>
+        <Route path='/cutoffs' element={<CutOffs></CutOffs>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>

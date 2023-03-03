@@ -12,8 +12,10 @@
   overflow: none;
 }
 :root{
-  --mathonga-primary-color:#12263f;
-  --mathonga-secondary-color:#1e3a5c;
+  --mathonga-primary-color:#12263f; 
+   --mathonga-secondary-color:#1e3a5c;
+  /* --mathonga-primary-color:#47beb9;
+ --mathonga-secondary-color:#caf7f4; */
   --mathonga-select-color:#152e4d;
 
 

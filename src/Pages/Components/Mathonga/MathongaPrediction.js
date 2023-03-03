@@ -61,7 +61,7 @@ const MathongaPrediction = () => {
     <div className='mathongaPrediction'>
         <div className='mathongaPredictionNav'>
             <div className='mathongaPredictionNavLeft'>
-                <img src='https://www.mathongo.com/jee-main-crash-course/assets/img/logo-light.svg' height={'40px'} style={{marginBottom:"12px"}}></img>
+                {/* <img src='https://www.mathongo.com/jee-main-crash-course/assets/img/logo-light.svg' height={'40px'} style={{marginBottom:"12px"}}></img> */}
                 <h1>JEE Main 2022 College Predictor</h1>
                 <p>Data Source: JoSAA (2021) till Round 6</p>
             </div>
