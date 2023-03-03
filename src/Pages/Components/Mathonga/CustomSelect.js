@@ -21,7 +21,8 @@ const CustomSelect = ({text,options,values,setValues,multi=true}) => {
         multiValue:styles=>{
             return {...styles,
                  backgroundColor:'var(--mathonga-primary-color)',
-                 color:'white'
+                 color:"red"
+                //  padding:'2px'
                     }
         },
         control:(baseStyles,state)=>({
@@ -42,6 +43,7 @@ const CustomSelect = ({text,options,values,setValues,multi=true}) => {
             color:'white',
             paddingTop:'3px',
           }),
+          
 
         
     }} value={values} onChange={(selectedOptions)=>setValues(selectedOptions)}  options={options} />
