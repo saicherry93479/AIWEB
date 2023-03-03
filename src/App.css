@@ -11,3 +11,11 @@
   font-family: myFirstFont;
   overflow: none;
 }
+:root{
+  --mathonga-primary-color:#12263f;
+  --mathonga-secondary-color:#1e3a5c;
+  --mathonga-select-color:#152e4d;
+
+
+  /* 1e3a5c */
+}

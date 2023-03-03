@@ -1,0 +1,220 @@
+.mathongaPrediction{
+    background-color: var(--mathonga-primary-color);
+    padding: 0px 12px;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+.mathongaPredictionNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mathongaPredictionNavLeft{
+    padding: 24px 6px;
+}
+.mathongaPredictionNavLeft>h1{
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: -0.52px;
+    line-height: 29px;
+    color: white;
+    margin-bottom: 3px;
+}
+.mathongaPredictionNavLeft>p{
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #6e84a3 !important;
+}
+.mathongaPredictionNavRight>img{
+    border: 4px solid white;
+    border-radius: 50%;
+  
+}
+.mathongaCustomInput{
+    margin-bottom: 22px;
+}
+.mathongaCustomInput>p{
+    font-size: 17px;
+    color: white;
+    line-height: 19px;
+    font-weight: 500;
+    letter-spacing: -0.34px;
+    margin-bottom: 14px;
+    
+}
+.mathongaCustomInputDiv{
+    padding: 8px 12px;
+    padding-right: 0px;
+    background-color: var(--mathonga-secondary-color);
+    width: 100%;
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+/* react select */
+
+/* to set width of container */
+.css-b62m3t-container{
+    width: 100%;
+}
+
+/* to rid border of select  */
+
+
+/* to get rid of slash between */
+.css-1u9des2-indicatorSeparator{
+    display: none;
+}
+
+.css-tj5bde-Svg>path{
+    color:#6e84a3 !important ;
+}
+.css-wsp0cs-MultiValueGeneric{
+    color: white !important;
+    font-size: 12px !important;
+}
+.css-1nmdiq5-menu{
+    background-color:var(--mathonga-select-color) !important ;
+}
+
+
+/* react select styling completed  */
+
+.mathongaPredictionInputs{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
+    flex-wrap: wrap;
+}
+.mathongaCustomInput{
+    flex-basis: 49%;
+    /* background-color: red; */
+}
+.mathongaCustomInputRadio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mathongaCustomInputRadio>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mathongaCustomInputRadio>div>label{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: white;
+
+}
+.mathongaCustomInputRadio>div>input{
+    background-color: #244166;
+    width: 1rem;
+    height: 1rem;
+
+}
+.mathongaPredictionButton{
+    margin:0 auto;
+    /* background-color: red; */
+    width: fit-content;
+    background-color: #2c7be5;
+    padding: 12px 20px;
+    border-radius: 0.375rem;
+    margin-bottom: 60px ;
+    margin-top: 20px;
+
+
+}
+.mathongaPredictionButton>p{
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: white;
+
+}
+.mathongaPredictionTable{
+    display: table;
+    flex-shrink: 0;
+    /* margin-bottom: 24px; */
+    margin-top: 24px;
+    /* overflow-x: visible; */
+    font-size: 13px;
+    width: 100%;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+    border-collapse: collapse;
+    width: 100%;
+    caption-side: bottom;
+    border-spacing: 2px;
+    border:1px solid  #1e3a5c;
+    
+
+    
+
+}
+.mathongaPredictionTable>thead>tr{
+    display: table-row;
+    background-color: #12263f;
+    color: white;
+    border-bottom:1px solid  #1e3a5c;
+  
+   
+}
+.mathongaPredictionTable>thead>tr>th{
+    color: #6e84a3;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 16px;
+    text-align: left;
+    white-space: nowrap;
+    
+    
+
+}
+
+.mathongaPredictionTable>tbody>tr{
+    display: table-row;
+    border-bottom:1px solid  #1e3a5c;
+    background-color: #152e4d;
+    
+
+}
+.mathongaPredictionTable>tbody>tr>td{
+    padding: 16px;
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+
+}
+
+
+@media screen and  (max-width:500px){
+    .mathongaPredictionInputs{
+        flex-direction: column;
+    }
+    .mathongaCustomInput{
+        width: 100%;
+    }
+    .mathongaPredictionNavLeft>h1{
+        font-size: 24px;
+        letter-spacing: -0.48px;
+        line-height: 26.5px;
+        font-weight: 500;
+    }
+    .mathongaPredictionTableDiv{
+        width: 100%;
+        overflow-x:scroll ;
+    }
+    /* .mathongaPredictionTable{
+        overflow: hidden;
+    } */
+}

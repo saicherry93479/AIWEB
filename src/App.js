@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext, useState } from 'react'
 import { Route,HashRouter as Router, Routes } from 'react-router-dom'
 
 import './App.css'
@@ -10,10 +10,21 @@ import PredictionHome from './Pages/Components/Prediction/PredictionHome'
 import Signin from './Pages/Components/Auth/Signin'
 import SignUp from './Pages/Components/Auth/SignUp'
 import Sample from './Pages/Components/Sample'
+import Loader from './Pages/Components/Utils/Loader'
+import AnimationOne from './Pages/Components/Utils/AnimationOne'
+import MathongaPrediction from './Pages/Components/Mathonga/MathongaPrediction'
 
+export const  AppContext = createContext()
 
 const App = () => {
+
+  const [modalOPen,setModalOpen]=useState(false)
+  const values={
+    modalOPen:modalOPen,
+    setModalOpen:setModalOpen
+  }
   return (
+    <AppContext.Provider value={values}>
     <Router>
       <NavBar></NavBar>
 
@@ -25,10 +36,11 @@ const App = () => {
         <Route path='/predict' element={<PredictionHome></PredictionHome>}></Route>
         <Route path='/signin' element={<Signin></Signin>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='/sample' element={<Sample></Sample>}></Route>
+        <Route path='/mathongaPrediction' element={<MathongaPrediction></MathongaPrediction>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>
+    </AppContext.Provider>
   )
 }
 

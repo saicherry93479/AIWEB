@@ -6,7 +6,7 @@ import "react-multi-date-picker/styles/colors/green.css"
 import '../../Styles/Prediction/CustomDatePicker.css'
 import Icon from "react-multi-date-picker/components/icon"
 
-const CustomDatePicker = ({width='100%',value,setValue,label,error=''}) => {
+const CustomDatePicker = ({width='100%',placeholder,value,setValue,label,error=''}) => {
 
   return (
 //    <div className='customDatePickerWidth'>
@@ -18,7 +18,7 @@ const CustomDatePicker = ({width='100%',value,setValue,label,error=''}) => {
         
         value={value}
         onChange={setValue}
-        render={<CustomInput text={label}  error={error}/>}
+        render={<CustomInput placeholder={placeholder} text={label}  error={error}/>}
         portal
          
       animations={[
@@ -36,7 +36,7 @@ const CustomDatePicker = ({width='100%',value,setValue,label,error=''}) => {
 export default CustomDatePicker
 
 
-function CustomInput({ openCalendar, value, handleValueChange,text ,error}) {
+function CustomInput({placeholder, openCalendar, value, handleValueChange,text ,error}) {
     return (
      <div className='customDatePicker' >
         <p className='predictionCustomInputLabel'>{text}</p>
@@ -45,7 +45,7 @@ function CustomInput({ openCalendar, value, handleValueChange,text ,error}) {
             <input
             onFocus={openCalendar}
             value={value}
-            placeholder='enter date'
+            placeholder={placeholder}
             onChange={handleValueChange}
         />
         <Icon onClick={openCalendar}></Icon>
